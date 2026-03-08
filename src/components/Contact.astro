@@ -1,0 +1,46 @@
+---
+import { contact } from '../data/siteContent';
+---
+
+<section id="contact" class="py-20 md:py-32 bg-cream">
+  <div class="max-w-xl mx-auto px-6">
+    <h2 class="font-heading text-4xl md:text-5xl font-light text-center mb-4">{contact.heading}</h2>
+    <p class="text-warm-gray font-light text-center mb-12">{contact.description}</p>
+
+    <form id="contact-form" class="space-y-6">
+      <div>
+        <input type="text" name="name" placeholder="Name" required
+          class="w-full bg-transparent border-b border-warm-gray/40 py-3 text-sm font-light tracking-wide placeholder:text-warm-gray/60 focus:border-accent transition-colors" />
+      </div>
+      <div>
+        <input type="email" name="email" placeholder="Email" required
+          class="w-full bg-transparent border-b border-warm-gray/40 py-3 text-sm font-light tracking-wide placeholder:text-warm-gray/60 focus:border-accent transition-colors" />
+      </div>
+      <div>
+        <textarea name="message" placeholder="Message" rows="4" required
+          class="w-full bg-transparent border-b border-warm-gray/40 py-3 text-sm font-light tracking-wide placeholder:text-warm-gray/60 resize-none focus:border-accent transition-colors"></textarea>
+      </div>
+      <div class="text-center pt-4">
+        <button type="submit"
+          class="border border-warm-black px-10 py-3 text-sm tracking-[0.2em] uppercase font-light hover:bg-warm-black hover:text-cream transition-all duration-300">
+          {contact.submitLabel}
+        </button>
+      </div>
+    </form>
+
+    <p id="form-success" class="hidden text-center font-heading text-2xl font-light mt-8 text-accent">
+      {contact.successMessage}
+    </p>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('contact-form') as HTMLFormElement;
+  const success = document.getElementById('form-success');
+
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    form.classList.add('hidden');
+    success?.classList.remove('hidden');
+  });
+</script>

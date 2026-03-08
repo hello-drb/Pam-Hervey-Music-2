@@ -1,0 +1,15 @@
+---
+import { bio } from '../data/siteContent';
+---
+
+<section id="about" class="py-20 md:py-32 bg-warm-black text-cream">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="space-y-6">
+      {bio.paragraphs.map((paragraph) => (
+        <p class="text-base md:text-lg font-light leading-relaxed text-cream/90">
+          {paragraph}
+        </p>
+      ))}
+    </div>
+  </div>
+</section>

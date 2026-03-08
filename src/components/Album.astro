@@ -1,0 +1,26 @@
+---
+import { album } from '../data/siteContent';
+---
+
+<section id="music" class="py-20 md:py-32 bg-cream">
+  <div class="max-w-[1400px] mx-auto px-6">
+    <div class="flex flex-col md:flex-row items-center gap-12 md:gap-20">
+      <div class="w-full md:w-1/2 max-w-lg">
+        <img src={album.coverImage} alt={album.coverAlt} class="w-full shadow-2xl" loading="lazy" />
+      </div>
+      <div class="w-full md:w-1/2 text-center md:text-left">
+        <p class="text-sm font-light tracking-[0.3em] uppercase text-warm-gray mb-4">
+          {album.artist}'s {album.subtitle}
+        </p>
+        <h2 class="font-heading text-4xl md:text-5xl lg:text-6xl font-light italic mb-6">
+          '{album.title}'
+        </h2>
+        <p class="text-warm-gray font-light text-lg mb-8">{album.vinylNote}</p>
+        <a href={album.purchaseUrl} target="_blank" rel="noopener noreferrer"
+          class="inline-block border border-warm-black px-8 py-3 text-sm tracking-[0.2em] uppercase font-light hover:bg-warm-black hover:text-cream transition-all duration-300">
+          {album.purchaseLabel}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,13 @@
+---
+import { hero } from '../data/siteContent';
+---
+
+<section class="relative w-full h-screen">
+  <img
+    src={hero.image}
+    alt={hero.alt}
+    class="w-full h-full object-cover object-center"
+    loading="eager"
+  />
+  <div class="absolute inset-0 bg-gradient-to-t from-cream/40 via-transparent to-transparent"></div>
+</section>
