@@ -2,18 +2,18 @@
 import { bio } from '../data/siteContent';
 ---
 
-<section id="about" class="relative py-20 md:py-32 text-cream overflow-hidden">
+<section id="about" class="relative py-24 md:py-40 text-cream overflow-hidden">
   <div class="absolute inset-0">
     <img
       src={bio.backgroundImage}
       alt=""
-      class="w-full h-full object-cover"
+      class="w-full h-full object-cover object-top"
       loading="lazy"
     />
-    <div class="absolute inset-0 bg-warm-black/80"></div>
+    <div class="absolute inset-0 bg-warm-black/75"></div>
   </div>
   <div class="relative max-w-3xl mx-auto px-6">
-    <div class="space-y-6">
+    <div class="space-y-8">
       {bio.paragraphs.map((paragraph) => (
         <p class="text-base md:text-lg font-light leading-relaxed text-cream/90">
           {paragraph}
