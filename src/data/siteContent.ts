@@ -15,7 +15,7 @@ export const siteSettings = {
 };
 
 export const hero = {
-  image: "/images/hero.jpg",
+  image: "https://res.cloudinary.com/diduw1fmf/image/upload/v1772233189/phm_header_image_qpycy3.png",
   alt: "Pam Hervey portrait photo",
 };
 
@@ -24,13 +24,14 @@ export const album = {
   artist: "Pam Hervey",
   subtitle: "DEBUT album",
   vinylNote: "Now available on vinyl",
-  coverImage: "/images/album-cover.png",
+  coverImage: "https://res.cloudinary.com/diduw1fmf/image/upload/v1772241494/Some_kind_of_way_a1lrds.png",
   coverAlt: "Some Kind of Way album cover",
   purchaseUrl: "https://pamhervey.bandcamp.com/",
   purchaseLabel: "Purchase on Bandcamp",
 };
 
 export const bio = {
+  backgroundImage: "https://res.cloudinary.com/diduw1fmf/image/upload/v1772233187/phm_bio_background_bqmgrv.png",
   paragraphs: [
     "Pam Hervey is a singer-songwriter hailing from the Hudson Valley, New York, and has captured the hearts of listeners with her 2024 album, \"Some Kind of Way.\"",
     "The album features a mix of original tracks, including \"Tender Mercies,\" \"Love & War,\" and \"Music From Another Room,\" alongside unique reinterpretations of existing songs like \"Scott Street\" and \"Blue Valentines.\"",
@@ -41,18 +42,16 @@ export const bio = {
 export const latestSingle = {
   title: "End of an Era",
   releaseDate: "Available 3/21/25",
-  coverImage: "/images/end-of-an-era-cover.png",
+  coverImage: "https://res.cloudinary.com/diduw1fmf/image/upload/v1772233186/phm_endofanera_qbpexa.png",
   coverAlt: "End of an Era single cover",
   listenHeading: "Listen to the new single:",
   streamingLinks: [
     {
       platform: "Apple Music",
-      icon: "/images/apple-music-icon.png",
       url: "#",
     },
     {
       platform: "Spotify",
-      icon: "/images/spotify-icon.png",
       url: "#",
     },
   ],
